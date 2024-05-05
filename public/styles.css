@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    position: relative; /* Добавляем position: relative для .container */
+}
+
+.sidebar {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.group-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.group-list li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #444;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.group-list li:hover {
+    background-color: #666;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+}
+
+
+.theme-button,
+.account-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.main{
+    border-radius: 15px;
+    background-color: #333;
+    height: 625px;
+}
+
+.content h2 {
+    text-align: center; /* Центрируем текст */
+    margin-top: 40px; /* Добавляем отступ сверху */
+}
+
+.task-input {
+    padding: 8px;
+    border: none;
+    border-radius: 8px; /* Увеличиваем радиус скругления */
+    background-color: #444; /* Устанавливаем темный цвет фона */
+    color: #fff; /* Устанавливаем белый цвет текста */
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 1000px; /* Уменьшаем ширину поля ввода */
+    margin-top: 40px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+.task-list li {
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.create-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: none;
+    transition: background-color 0.3s; /* Добавляем плавное изменение цвета фона */
+}
+
+.create-button:hover {
+    background-color: #555; /* Новый цвет фона при наведении */
+}
+
+.sidebar {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    position: relative; /* Делаем панель относительным контейнером */
+    margin-top: 100px; /* Добавляем отступ сверху */
+}
+
+.create-button-group {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Делаем кнопку круглой */
+    width: 40px; /* Устанавливаем ширину */
+    height: 40px; /* Устанавливаем высоту */
+    font-size: 20px; /* Устанавливаем размер шрифта */
+    line-height: 40px; /* Устанавливаем высоту строки */
+    cursor: pointer;
+    position: absolute; /* Делаем кнопку абсолютным элементом */
+    bottom: 20px; /* Отступ от нижнего края */
+    left: 50%; /* Центрируем кнопку по горизонтали */
+    transform: translateX(-50%); /* Центрируем кнопку по горизонтали */
+    box-shadow: none;
+    transition: background-color 0.3s; /* Добавляем плавное изменение цвета фона */
+}
+
+.create-button-group:hover {
+    background-color: #666; /* Новый цвет фона при наведении */
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 81%;
+    right: 84%;
+    z-index: 1;
+}
+
+.sidebar {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 100px;
+    position: relative; /* Делаем позиционирование относительно контейнера .container */
+    z-index: 0; /* Устанавливаем базовый уровень z-index для боковой панели */
+}
+
+.logo-container img {
+    width: 300px; /* Устанавливаем ширину */
+    height: auto; /* Позволяем высоте автоматически подстраиваться */
+}
+
+/* Добавляем новый стиль для круга с плюсом */
+.add-task-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #008cba;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-task-button::before,
+.add-task-button::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.add-task-button::before {
+    transform: rotate(90deg);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Logo.png" alt="Логотип">
+        </div>
+        <div class="sidebar">
+            <h2>Поле выбора группы</h2>
+            <ul class="group-list">
+                <li>Группа 1</li>
+                <li>Группа 2</li>
+                <li>Группа 3</li>
+                <li>Группа 4</li>
+            </ul>
+            <button class="create-button-group">+</button> <!-- Кнопка "Создать" -->
+        </div>
+        <div class="content">
+            <h2>Задачи</h2>
+            <div class="form">
+                <div class="main">
+                    <input type="text" class="task-input" placeholder="Задача">
+                    <button class="create-button">Создать</button>
+                </div>
+                <ul class="task-list"></ul> <!-- Перенесенный список задач -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
